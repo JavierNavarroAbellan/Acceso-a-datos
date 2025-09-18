@@ -1,6 +1,7 @@
 // Uso de la clase File para mostrar información de ficheros y directorios
  importjava.io.File;
  importjava.io.IOException;
+
  publicclassListadoDirectorio{
  publicstaticvoidmain(String[]args){
  Stringruta =".";
