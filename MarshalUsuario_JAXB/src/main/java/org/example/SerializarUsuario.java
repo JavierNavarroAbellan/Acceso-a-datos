@@ -14,7 +14,11 @@ public class SerializarUsuario {
         try {
             Usuario usuario = new Usuario("U001", "Juan Pérez", "juan.perez@email.com", "admin");
             JAXBContext context = JAXBContext.newInstance(Usuario.class);
+
+            //Marshaller que convierte objeto a XML
             Marshaller marshaller = context.createMarshaller();
+
+            //Formatea el archivo para que se vea como XML
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
             // Serializa el objeto a usuario.xml
