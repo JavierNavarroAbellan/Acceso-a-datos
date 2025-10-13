@@ -6,3 +6,5 @@
 [WARNING] Contraseña incorrecta introducida tres veces.
 [INFO] Nuevo intento de inicio de sesión.
 [WARNING] Contraseña incorrecta introducida tres veces.
+[INFO] Nuevo intento de inicio de sesión.
+[WARNING] Contraseña incorrecta introducida tres veces.

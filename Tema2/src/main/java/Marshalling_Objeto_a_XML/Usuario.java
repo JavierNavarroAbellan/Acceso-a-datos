@@ -1,4 +1,4 @@
-package org.example;
+package Marshalling_Objeto_a_XML;
 
 /**
  * @author Javier Navarro Abellán
@@ -25,19 +25,15 @@ public class Usuario {
         this.email = email;
         this.rol = rol;
     }
-
     @XmlElement
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
-
     @XmlElement
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
-
     @XmlElement
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
-
     @XmlElement
     public String getRol() { return rol; }
     public void setRol(String rol) { this.rol = rol; }

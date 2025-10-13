@@ -1,3 +1,5 @@
+package Lextura_XML_DOM;
+
 import org.w3c.dom.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -5,7 +7,9 @@ import java.io.File;
 
 public class LeerLogs {
     public static void main(String[] args) {
+
         try {
+
             // 1. Cargar el archivo logs.xml
             File archivo = new File("logs.xml");
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -25,15 +29,17 @@ public class LeerLogs {
             // 4. Recorrer cada <log>
             for (int i = 0; i < listaLogs.getLength(); i++) {
                 Node nodo = listaLogs.item(i);
-
                 if (nodo.getNodeType() == Node.ELEMENT_NODE) {
                     Element log = (Element) nodo;
 
                     // Extraer datos
                     String id = log.getAttribute("id");
-                    String nivel = log.getElementsByTagName("nivel").item(0).getTextContent();
-                    String mensaje = log.getElementsByTagName("mensaje").item(0).getTextContent();
-                    String usuario = log.getElementsByTagName("usuario").item(0).getTextContent();
+                    String nivel =
+                            log.getElementsByTagName("nivel").item(0).getTextContent();
+                    String mensaje =
+                            log.getElementsByTagName("mensaje").item(0).getTextContent();
+                    String usuario =
+                            log.getElementsByTagName("usuario").item(0).getTextContent();
 
                     // Mostrar en consola
                     System.out.println("----- Registro de log -----");
